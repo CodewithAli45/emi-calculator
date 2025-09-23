@@ -2,8 +2,9 @@ from flask import Flask
 from routes.main_routes import main
 import os
 
+app = Flask(__name__)
 def create_app():
-    app = Flask(__name__)
+    
     app.config['SECRET_KEY'] = 'your_secret_key_here' # For security, change this
     app.register_blueprint(main)
     return app
