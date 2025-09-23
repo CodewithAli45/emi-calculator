@@ -3,57 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EMI Calculator</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="/static/index.js"></script>
+    <title>Modern EMI Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-
-<div class="container mt-5">
-    <div class="row justify-content-center">
-        <div class="col-md-6">
-            <div class="card">
-                <div class="card-header text-center">
-                    <h3>EMI Calculator</h3>
+<div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="card shadow-lg">
+        <div class="card-header text-center border-0 bg-transparent">
+            <h3>EMI Calculator</h3>
+        </div>
+        <div class="card-body">
+            <form id="emiForm">
+                <div class="mb-3">
+                    <label for="principal" class="form-label">Principal Amount (P)</label>
+                    <input type="number" class="form-control" id="principal" name="principal" required>
                 </div>
-                <div class="card-body">
-                    <form id="emiForm">
-                        <div class="mb-3">
-                            <label for="principal" class="form-label">Principal Amount (P)</label>
-                            <input type="number" class="form-control" id="principal" name="principal" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="rate" class="form-label">Annual Interest Rate (r) %</label>
-                            <input type="number" step="0.01" class="form-control" id="rate" name="rate" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="tenure" class="form-label">Loan Tenure (t)</label>
-                            <div class="input-group">
-                                <input type="number" class="form-control" id="tenure" name="tenure" required>
-                                <select class="form-select" name="tenure_unit">
-                                    <option value="year" selected>Years</option>
-                                    <option value="month">Months</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="d-grid gap-2">
-                            <button type="submit" class="btn btn-primary">Calculate EMI</button>
-                        </div>
-                    </form>
-
-                    <div id="results" class="mt-4" style="display: none;">
-                        <h4>Calculation Results</h4>
-                        <ul class="list-group">
-                            <li class="list-group-item">Monthly EMI: <span id="emi-val" class="float-end fw-bold"></span></li>
-                            <li class="list-group-item">Total Interest Payable: <span id="interest-val" class="float-end fw-bold"></span></li>
-                            <li class="list-group-item">Total Payment: <span id="total-val" class="float-end fw-bold"></span></li>
-                        </ul>
+                <div class="mb-3">
+                    <label for="rate" class="form-label">Annual Interest Rate (r) %</label>
+                    <input type="number" step="0.01" class="form-control" id="rate" name="rate" required>
+                </div>
+                <div class="mb-3">
+                    <label for="tenure" class="form-label">Loan Tenure (t)</label>
+                    <div class="input-group">
+                        <input type="number" class="form-control" id="tenure" name="tenure" required>
+                        <select class="form-select" name="tenure_unit">
+                            <option value="year" selected>Years</option>
+                            <option value="month">Months</option>
+                        </select>
                     </div>
                 </div>
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-primary">Calculate EMI</button>
+                </div>
+            </form>
+
+            <div id="results" class="mt-4" style="display: none;">
+                <h4 class="mb-3">Calculation Results</h4>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span>Monthly EMI:</span> <span id="emi-val" class="fw-bold"></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span>Total Interest Payable:</span> <span id="interest-val" class="fw-bold"></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span>Total Payment:</span> <span id="total-val" class="fw-bold"></span>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="{{ url_for('static', filename='index.js') }}"></script>
 </body>
 </html>

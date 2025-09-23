@@ -11,7 +11,7 @@ document.getElementById('emiForm').addEventListener('submit', function(event) {
     .then(response => response.json())
     .then(data => {
         if (data.error) {
-            alert('Error: ' + data.error);
+            alert('Error in fetching data from backend ' + data.error);
             return;
         }
 
