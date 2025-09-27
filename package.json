@@ -22,7 +22,6 @@
   "bugs": {
     "url": "https://github.com/CodewithAli45/emi-calculator/issues"
   },
-  "homepage": "https://github.com/CodewithAli45/emi-calculator#readme",
   "dependencies": {
     "react": "^19.1.1",
     "react-dom": "^19.1.1"

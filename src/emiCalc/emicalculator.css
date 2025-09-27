@@ -1,0 +1,166 @@
+.emi-calc-switch-btn-inside {
+  position: absolute;
+  top: 1.2rem;
+  left: 1.2rem;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(106,17,203,0.10);
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+  transition: background 0.2s;
+}
+
+.emi-calc-header {
+  position: relative;
+}
+.emi-calc-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+}
+
+.emi-calc-card {
+  background: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 8px 32px rgba(106,17,203,0.15);
+  width: 350px;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.emi-calc-header {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  border-radius: 1.5rem;
+  color: #fff;
+  padding: 1.5rem 1rem 1rem 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 16px rgba(106,17,203,0.10);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.emi-calc-back {
+  align-self: flex-start;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+.emi-calc-emi-label {
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+}
+
+.emi-calc-emi-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.emi-calc-emi-month {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.emi-calc-summary {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 0.7rem;
+}
+
+.emi-calc-summary > div {
+  text-align: center;
+}
+
+.emi-calc-summary-value {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 0.1rem;
+}
+
+.emi-calc-total-label {
+  font-size: 0.95rem;
+  margin-bottom: 0.1rem;
+}
+
+.emi-calc-total-value {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.emi-calc-breakdown {
+  font-size: 0.9rem;
+  color: #e0e0e0;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+.emi-calc-form {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 8px rgba(106,17,203,0.07);
+  padding: 1.2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.emi-calc-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.emi-calc-field label {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 0.1rem;
+}
+
+.emi-calc-field input[type="number"] {
+  border: none;
+  background: #f3f6fb;
+  border-radius: 0.7rem;
+  padding: 0.5rem 0.8rem;
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+  outline: none;
+  width: 100%;
+}
+
+.emi-calc-field input[type="range"] {
+  width: 100%;
+  accent-color: #2575fc;
+  margin-bottom: 0.1rem;
+}
+
+.emi-calc-apply {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.7rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  box-shadow: 0 2px 8px rgba(106,17,203,0.10);
+  transition: background 0.2s;
+}
+
+.emi-calc-apply:hover {
+  background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+}

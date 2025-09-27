@@ -1,8 +1,6 @@
-import React from 'react'
+import React from 'react';
+import EMICalculator from './emiCalc/emicalculator';
 
 export default function App() {
-    console.log("App component rendered");
-  return (
-    <div>App</div>
-  )
+  return <EMICalculator />;
 }
