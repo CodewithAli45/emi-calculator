@@ -1,0 +1,42 @@
+{
+  "name": "emi-calculator",
+  "version": "1.0.0",
+  "description": "EMI Calculator, Finance, Accounts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodewithAli45/emi-calculator.git"
+  },
+  "keywords": [
+    "EMI",
+    "Calculator",
+    "Fianance"
+  ],
+  "author": "Ali Murtaza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodewithAli45/emi-calculator/issues"
+  },
+  "homepage": "https://github.com/CodewithAli45/emi-calculator#readme",
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
