@@ -7,6 +7,8 @@ requrements.txt
 venv
 .venv
 
+node_modules/
+
 # C extensions
 *.so
 

@@ -15,7 +15,7 @@
   "keywords": [
     "EMI",
     "Calculator",
-    "Fianance"
+    "Finance"
   ],
   "author": "Ali Murtaza",
   "license": "ISC",
@@ -26,6 +26,9 @@
   "dependencies": {
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "react-scripts": "^5.0.1"
   },
   "browserslist": {
     "production": [
