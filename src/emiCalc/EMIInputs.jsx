@@ -7,7 +7,7 @@ export default function EMIInputs({ principal, setPrincipal, rate, setRate, tenu
     <div className="emi-calc-form">
       <div className="emi-calc-field">
         <label>Loan Amount</label>
-  <input type="number" value={principal} min={0} max={10000000} onChange={e => setPrincipal(Number(e.target.value))} className="no-spinner" />
+  <input type="number" value={principal}  max={10000000} onChange={e => setPrincipal(Number(e.target.value))} className="no-spinner" />
       </div>
       <div className="emi-calc-field">
         <label>Interest Rate</label>

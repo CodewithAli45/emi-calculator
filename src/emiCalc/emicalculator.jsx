@@ -14,7 +14,7 @@ function calculateEMI(P, R, N) {
 }
 
 export default function EMICalculator() {
-  const [principal, setPrincipal] = useState(25000);
+  const [principal, setPrincipal] = useState(25000.00);
   const [rate, setRate] = useState(9);
   const [tenure, setTenure] = useState(14);
   // const [uiType, setUiType] = useState('default'); // 'default' or 'circular'
@@ -32,7 +32,7 @@ export default function EMICalculator() {
   // Remove leading zeros
   const handlePrincipalChange = (val) => {
     const num = String(val).replace(/^0+/, '');
-    setPrincipal(num === '' ? 0 : Number(num));
+    setPrincipal(num === '' ? '' : Number(num));
   };
 
   // Format principal on blur
