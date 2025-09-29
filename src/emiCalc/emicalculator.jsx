@@ -47,7 +47,7 @@ export default function EMICalculator() {
           <div className="emi-calc-header">
             {/* Switch button disabled for testing */}
             <div className="emi-calc-emi-label">Your EMI is</div>
-            <div className="emi-calc-emi-value">₹ {emi.toFixed(2)}</div>
+            <div className="emi-calc-emi-value" id='text3d'>₹ {emi.toFixed(2)}</div>
             <div className="emi-calc-emi-month">per month</div>
             <div className="emi-calc-summary">
               <div>

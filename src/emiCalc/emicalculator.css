@@ -2,7 +2,7 @@
   position: absolute;
   top: 1.2rem;
   left: 1.2rem;
-  background: #fff;
+  background: #742b2b;
   border-radius: 50%;
   box-shadow: 0 2px 8px rgba(106,17,203,0.10);
   width: 36px;
@@ -17,17 +17,19 @@
 
 .emi-calc-header {
   position: relative;
+  
 }
 .emi-calc-container {
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  /* background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); */
+  
 }
 
 .emi-calc-card {
-  background: #fff;
+  background: #7c1818;
   border-radius: 2rem;
   box-shadow: 0 8px 32px rgba(106,17,203,0.15);
   width: 350px;
@@ -38,7 +40,8 @@
 }
 
 .emi-calc-header {
-  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  /* background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); */
+  
   border-radius: 1.5rem;
   color: #fff;
   padding: 1.5rem 1rem 1rem 1rem;
@@ -148,7 +151,7 @@
 }
 
 .emi-calc-apply {
-  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  /* background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); */
   color: #fff;
   border: none;
   border-radius: 1rem;
